@@ -610,3 +610,89 @@
   background-color: var(--color-background);
   color: var(--color-on-background);
 }
+
+/* ======================================================= */
+/* YAMAN LABS PORTAL THEME                                 */
+/* ======================================================= */
+.yamanlabs-portal-theme {
+  --color-primary: #16332d;
+  --color-primary-container: #2d4a43;
+  --color-on-primary-container: #99b9b0;
+  --color-background: #fbf9f5;
+  --color-on-background: #1b1c1a;
+  --color-secondary: #5f5e5f;
+  --color-secondary-container: #e5e2e1;
+  --color-surface: #fbf9f5;
+  --color-surface-container-low: #f5f3ef;
+  --color-surface-container: #efeeea;
+  --color-surface-container-high: #eae8e4;
+  --color-surface-container-highest: #e4e2de;
+  --color-outline: #727976;
+  --color-outline-variant: #c1c8c5;
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  font-family: var(--font-sans);
+}
+
+@utility border-editorial {
+  border-color: #EAE6DC;
+}
+
+@utility btn-primary {
+  background-color: #111111;
+  color: #ffffff;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+@utility btn-secondary {
+  border: 1px solid #111111;
+  color: #111111;
+  background-color: transparent;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+
+  &:hover {
+    background-color: #111111;
+    color: #ffffff;
+  }
+}
+

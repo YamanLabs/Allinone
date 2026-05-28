@@ -1,22 +1,20 @@
 import type { Metadata } from "next";
-import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
+import { Geist, JetBrains_Mono } from "next/font/google";
 import "../globals.css";
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
-const plusJakarta = Plus_Jakarta_Sans({
-  variable: "--font-plus-jakarta",
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
-  title: "Yaman Labs Showcase - Premium Web Demos",
-  description: "A showcase of premium restaurant, cafe, and burger web design demos created by Yaman Labs.",
+  title: "Yaman LABS Showcase | Dijital Menü & Restoran Demoları",
+  description: "Yaman Labs tarafından geliştirilen yüksek performanslı, modern ve estetik dijital menü / restoran web sitesi demoları vitrini.",
 };
 
 export default function RootLayout({
@@ -27,7 +25,7 @@ export default function RootLayout({
   return (
     <html
       lang="tr"
-      className={`${outfit.variable} ${plusJakarta.variable} h-full antialiased scroll-smooth`}
+      className={`${geistSans.variable} ${jetbrainsMono.variable} h-full antialiased scroll-smooth`}
     >
       <head>
         <link
@@ -35,7 +33,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-full bg-[#0A0503] text-gray-100 font-sans selection:bg-[#B85C38] selection:text-white">
+      <body className="yamanlabs-portal-theme min-h-full flex flex-col selection:bg-[#111111] selection:text-white">
         {children}
       </body>
     </html>
